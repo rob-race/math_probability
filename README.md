@@ -1,5 +1,6 @@
 # MathProbability
-{<img src="https://travis-ci.org/polysaturate/math_probability.png?branch=master" alt="Build Status" />}[https://travis-ci.org/polysaturate/math_probability]
+
+[![Build Status](https://travis-ci.org/polysaturate/math_probability.png?branch=master)](https://travis-ci.org/polysaturate/math_probability)
 
 Quickly find factorals, summnations, permutations, combanations and probability answers
 
