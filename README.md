@@ -1,6 +1,7 @@
 # MathProbability
+{<img src="https://travis-ci.org/polysaturate/math_probability.png?branch=master" alt="Build Status" />}[https://travis-ci.org/polysaturate/math_probability]
 
-TODO: Write a gem description
+Quickly find factorals, summnations, permutations, combanations and probability answers
 
 ## Installation
 
