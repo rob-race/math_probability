@@ -1,6 +1,7 @@
 # MathProbability
 
 [![Build Status](https://travis-ci.org/polysaturate/math_probability.png?branch=master)](https://travis-ci.org/polysaturate/math_probability)
+[![Coverage Status](https://coveralls.io/repos/polysaturate/math_probability/badge.png?branch=master)](https://coveralls.io/r/polysaturate/math_probability?branch=master)
 [![Code Climate](https://codeclimate.com/github/polysaturate/math_probability.png)](https://codeclimate.com/github/polysaturate/math_probability)
 
 Quickly find factorals, summnations, permutations, combanations and probability answers
