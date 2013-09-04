@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/polysaturate/math_probability/badge.png?branch=master)](https://coveralls.io/r/polysaturate/math_probability?branch=master)
 [![Code Climate](https://codeclimate.com/github/polysaturate/math_probability.png)](https://codeclimate.com/github/polysaturate/math_probability)
 
-Quickly find factorals, summnations, permutations, combanations and probability answers
+Quickly find factorals, summations, permutations, combanations and probability answers
 
 ## Installation
 
@@ -47,10 +47,14 @@ Combinations | Usage combinations(objects, at_a_time)
     prob.combinations(10,4)
     => 210
     
-Probability | Usage probability(choices, outcomes)
+Probability | Usage probability(choices, outcomes, reduce=true)
 
     prob.probability(1,4)
     => [0.25, "25.0%", "1/4"]
+    prob.probability(2,4)
+    => [0.5, "50.0%", "1/2"]
+    prob.probability(2,4,false)
+    => [0.5, "50.0%", "2/4"]
     
 
 ## Contributing
