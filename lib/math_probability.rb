@@ -27,10 +27,22 @@ module MathProbability
       (((objects.factoral)/((objects-at_a_time).factoral))*(1.0/(at_a_time.factoral))).to_i
     end
 
-    def self.probability(choice, outcomes)
+    def self.probability(choices, outcomes, reduce=true)
       answer ||= []
-      a = choice.to_f / outcomes
-      answer << a << "#{a*100}%" << "#{choice}/#{outcomes}"
+      a = choices.to_f / outcomes
+      answer << a << "#{a*100}%" << (reduce ? reduced_fraction(choices, outcomes) : "#{choices}/#{outcomes}")
+    end
+
+    private
+
+    def self.reduced_fraction(nominator, denominator)
+      lcd ||= denominator
+      denominator.downto(2).each do |n|
+        if nominator % n == 0 && denominator % n == 0 && n != denominator && n < lcd
+          lcd = n
+        end
+      end
+      lcd != denominator ? "#{nominator/lcd}/#{denominator/lcd}" : "#{nominator}/#{denominator}"
     end
 
   end
