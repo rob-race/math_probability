@@ -5,3 +5,4 @@ rvm:
   - 2.0.0
 script:
   - "COVERAGE=true bundle exec rake"
+  - "bundle exec coveralls push"
