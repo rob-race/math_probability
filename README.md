@@ -56,6 +56,11 @@ Probability | Usage probability(choices, outcomes, reduce=true)
     prob.probability(2,4,false)
     => [0.5, "50.0%", "2/4"]
     
+## Running tests
+
+    $ git clone git://github.com/polysaturate/math_probability.git
+    $ bundle install
+    $ rake   
 
 ## Contributing
 
