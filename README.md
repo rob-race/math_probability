@@ -19,8 +19,37 @@ Or install it yourself as:
     $ gem install math_probability
 
 ## Usage
+General Usage:
 
-TODO: Write usage instructions here
+    5.factoral
+    => 120
+    prob = MathProbability::Probability
+    
+Sigma(Summation) | Usage: sigma(start, end, formula)
+
+    prob.sigma(1,4,"4*x-3")
+    => 28
+    
+Permutation without repeating | Usage permutation_no_repeat(objects, at_a_time)
+
+    prob.permutations_no_repeat(8,5)
+    => 6720
+    
+Permutation with repeating | Usage permutation_no_repeat(objects, at_a_time)
+
+    prob.permutations_with_repeat(8,5)
+    => 32768
+    
+Combinations | Usage combinations(objects, at_a_time)
+
+    prob.combinations(10,4)
+    => 210
+    
+Probability | Usage probability(choices, outcomes)
+
+    prob.probability(1,4)
+    => [0.25, "25.0%", "1/4"]
+    
 
 ## Contributing
 
