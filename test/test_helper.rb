@@ -1,8 +1,7 @@
 require 'simplecov'
 require 'coveralls'
-SimpleCov.start do
-  # rules here
-end if ENV["COVERAGE"]
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.start
 
 require 'rubygems'
 gem 'minitest'
