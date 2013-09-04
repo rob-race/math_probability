@@ -1,5 +1,8 @@
+require 'simplecov'
 require 'coveralls'
-Coveralls.wear!
+SimpleCov.start do
+  # rules here
+end if ENV["COVERAGE"]
 
 require 'rubygems'
 gem 'minitest'
