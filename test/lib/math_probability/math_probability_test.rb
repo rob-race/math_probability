@@ -29,15 +29,15 @@ describe MathProbability::Probability do
   end
 
   it "should return all forms of Probability" do
-    subject.probability(1,2).must_equal([0.5, "50.0%", "1/2"])
+    subject.probability(1,2).must_equal({:decimal=> 0.5, :percentage=>"50.0%", :fraction=>"1/2"})
   end
 
   it "should return a reduced fraction" do
-    subject.probability(2,4).must_equal([0.5, "50.0%", "1/2"])
+    subject.probability(2,4).must_equal({:decimal=> 0.5, :percentage=>"50.0%", :fraction=>"1/2"})
   end
 
   it "should not return a reduced fraction if flag is set to false" do
-    subject.probability(2,4,false).must_equal([0.5, "50.0%", "2/4"])
+    subject.probability(2,4,false).must_equal({:decimal=> 0.5, :percentage=>"50.0%", :fraction=>"2/4"})
   end
  
 end

@@ -28,9 +28,8 @@ module MathProbability
     end
 
     def self.probability(choices, outcomes, reduce=true)
-      answer ||= []
       a = choices.to_f / outcomes
-      answer << a << "#{a*100}%" << (reduce ? reduced_fraction(choices, outcomes) : "#{choices}/#{outcomes}")
+      answer = {decimal: a, percentage: "#{a*100}%", fraction: (reduce ? reduced_fraction(choices, outcomes) : "#{choices}/#{outcomes}")}
     end
 
     private
