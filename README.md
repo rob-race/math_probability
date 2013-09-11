@@ -50,11 +50,11 @@ Combinations | Usage combinations(objects, at_a_time)
 Probability | Usage probability(choices, outcomes, reduce=true)
 
     prob.probability(1,4)
-    => [0.25, "25.0%", "1/4"]
+    => {:decimal=> 0.25, :percentage=>"25.0%", :fraction=>"1/4"}
     prob.probability(2,4)
-    => [0.5, "50.0%", "1/2"]
+    => {:decimal=> 0.5, :percentage=>"50.0%", :fraction=>"1/2"}
     prob.probability(2,4,false)
-    => [0.5, "50.0%", "2/4"]
+    => {:decimal=> 0.5, :percentage=>"50.0%", :fraction=>"2/4"}
     
 ## Running tests
 
